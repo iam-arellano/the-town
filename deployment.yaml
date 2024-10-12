@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-the-town
+  name: deployment-the-town:1.0.0-1
   labels:
     app: app-town
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: c-town
-        image: raemondarellano/the-town:1.0.0
+        image: raemondarellano/the-town:1.0.0-1
         ports:
         - containerPort: 80 
