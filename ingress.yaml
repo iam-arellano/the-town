@@ -14,9 +14,8 @@ spec:
             name: service-the-town
             port:
               number: 80
-      paths:
-      - pathType: Prefix
-        path: "/vanilla"
+      - path: "/vanilla"
+        pathType: Prefix
         backend:
           service:
             name: service-townvanilla
