@@ -15,13 +15,13 @@ spec:
             port:
               number: 80
 
-  # - host: "my.town"         # domain
-  #   http:
-  #     paths:
-  #     - pathType: Prefix
-  #       path: "/vanilla"
-  #       backend:
-  #         service:
-  #           name: service-bodybuilder-protien
-  #           port:
-  #             number: 80
+  - host: "my.town"         # domain
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/vanilla"
+        backend:
+          service:
+            name: service-townvanilla
+            port:
+              number: 80
