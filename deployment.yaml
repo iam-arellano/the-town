@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: c-town
-        image: raemondarellano/the-town:1.0.0-1
+        image: raemondarellano/the-town:1.0.0-2
         ports:
         - containerPort: 80 
