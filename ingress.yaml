@@ -14,9 +14,6 @@ spec:
             name: service-the-town
             port:
               number: 80
-
-  - host: "my.town"         # domain
-    http:
       paths:
       - pathType: Prefix
         path: "/vanilla"
