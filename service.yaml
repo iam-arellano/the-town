@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-the-town
+spec:
+  selector:
+    app: app-town
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+#      nodePort: 30012

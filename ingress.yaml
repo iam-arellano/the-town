@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-the-town
+spec:
+  rules:
+  - host: "my.town"         # domain
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: service-the-town
+            port:
+              number: 80
+
+  # - host: "my.town"         # domain
+  #   http:
+  #     paths:
+  #     - pathType: Prefix
+  #       path: "/vanilla"
+  #       backend:
+  #         service:
+  #           name: service-bodybuilder-protien
+  #           port:
+  #             number: 80
